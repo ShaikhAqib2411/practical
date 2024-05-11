@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        #home{
+            background-image:url("img/bg2.webp") ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #cotent{
+            display: flex;
+            padding-left: 10%;
+            padding-bottom: 10%;
+            padding-top: 10%;
+            padding-right: 10%;
+            
+        }
+        .menu-item {
+            padding-left: 2%;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            padding-right: 2%;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+            background-color: beige;
+        }
+        .menu-item img {
+            border-radius:50%;
+       
+            width: 200px;
+            height: 200px;
+        
+        }
+        .menu-item-details img {
+            padding: 10px;
+            border-radius:30%;
+            height:300px;
+            width:300px;
+
+        }
+      
+
+        
+        #saladd{
+         
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            font-weight: lighter;
+            text-align: center;
+            border-radius:20%;
+            
+
+            
+        }
+        #tacosd{
+     
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            font-weight: lighter;
+            text-align: center;
+            border-radius:20%;
+            
+
+            
+        }
+        #mohito{
+           
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            font-weight: lighter;
+            text-align: center;
+            border-radius:20%;
+            
+
+            
+        }
+        #cheese{
+       
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            font-weight: lighter;
+            text-align: center;
+            border-radius:20%;
+            
+
+            
+        }
+    </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+       <h1>Aqib's Kitchen</h1>
+        <h3>Restaurant Menu</h3>
+    </div>
+
+    <div data-role="content" id="cotent">
+        <div class="menu-item">
+            <a href="#saladd" data-transition="fade">
+                <img src="img/salad.avif">
+                <h2>Caesor's Salad</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#mohito" data-transition="fade">
+                <img src="img/mohito.avif">
+                <h2>Red Lady Mohito</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#tacosd" data-transition="fade">
+                <img src="img/tacos.avif">
+                <h2>Tacos</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#cheese" data-transition="fade">
+                <img src="img/cheesecake.avif">
+                <h2>Rasberry CheeseCake</h2>
+            </a>
+        </div>
+</div>
+
+        
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; Ruchi's Restaurant</h4>
+    </div>
+</div>
+
+<!-- tacosd Page -->
+<div data-role="page" id="tacosd">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+        <h1>Veg Tacos</h1>
+    </div>
+
+    <div data-role="content" class="menu-item-details">
+        <img src="img/tacos.avif" alt="tacosd">
+        <p>These easy vegetarian tacos are filled with black beans, roasted vegetables, and a delicious creamy avocado tomatillo sauce. Feel free to use any roasted vegetables you like here. Sweet potatoes, winter squash, poblano peppers, and/or roasted onions would all be great.</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; Aqib's Restaurant</h4>
+    </div>
+</div>
+
+<!-- mohito Page -->
+<div data-role="page" id="mohito">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+        <h1>mohito</h1>
+    </div>
+
+    <div data-role="content" class="menu-item-details">
+        <img src="img/mohito.avif" alt="mohito">
+        <p>A summery drink with flavors of citrus and watermelon, balanced with a little savory saltiness. Spice Infused Whiskey.</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; Aqib's Restaurant</h4>
+    </div>
+</div>
+<!-- salad Page -->
+<div data-role="page" id="saladd">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+        <h1>Caesar Salad</h1>
+    </div>
+
+    <div data-role="content" class="menu-item-details">
+        <img src="img/salad.avif" alt="salad">
+        <p>This easy Caesar salad recipe stars romaine lettuce, homemade croutons, Parmesan cheese, and a creamy homemade Caesar dressing.<br>The bottom line. A classic Caesar salad can fit into any healthy eating plan, but modifications to make it more nutritious may be a good idea if you eat them often. <br>Choose a salad dressing that's low in saturated fat and sodium and consider using a 1-tablespoon (14-gram) serving. A great main or side dish!<br>$12</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; Aqib's Restaurant</h4>
+    </div>
+</div>
+
+<!-- cheese Page -->
+<div data-role="page" id="cheese">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="#home" data-rel="back" data-icon="back">Back</a>
+        <h1>Rasberry CheeseCake</h1>
+    </div>
+
+    <div data-role="content" class="menu-item-details">
+        <img src="img/cheesecake.avif" alt="tacos">
+        <p>You’ll love this incredibly rich and creamy baked raspberry cheesecake. It has the most amazing intense raspberry flavour and the raspberry sauce it a total revelation, adding a wonderful tangy freshness and transforming the cheesecake into a truly unforgettable dessert.</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; Aqib's Restaurant</h4>
+    </div>
+</div>
+
+</body>
+</html>
